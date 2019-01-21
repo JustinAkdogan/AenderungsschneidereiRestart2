@@ -1,0 +1,208 @@
+/* General Style */
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: lightsteelblue;
+    font-size: 100%; /* Vielleicht auch im Header/Footer nötig */
+    margin: 0em;
+    padding: 0em;
+}
+
+h1{
+    font-size: 2.5vw;
+    font-family: "Calibri Light";
+    font-weight: 100; /* Textdicke */
+    color: #ffffff;
+    margin: 0vh; /* Abstand zum Eltern oder Nachbarselement*/
+}
+
+h2{
+    font-size: 5vw;
+    font-family: "Calibri Light";
+    font-weight: bold; /* Textdicke */
+    color: #ffffff;
+    text-align: center;
+    margin: 0vh; /* Abstand zum Eltern oder Nachbarselement*/
+    text-decoration: underline;
+}
+
+/* Start Section */
+#start{
+    background-image: url("../img/start_img.jpg");
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+#start h1 {
+    text-align: center;
+    font-family: fantasy;
+    font-size: 4vw;
+    padding-top: 30vh;
+}
+
+#start a{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 5.4%;
+    margin-top: 2vh;
+}
+
+/* Main Section */
+#main img {
+    width: 50%;
+    display: block;
+    margin-top: 0vh;
+}
+
+#main h2{
+    margin-top: 0vh;
+}
+
+#content1 img {
+    float: left;
+    margin-top: 0vh;
+}
+
+#content1 a {
+    color: white;
+    font-size: 2vw;
+    text-align: justify;
+    margin-left: 7%;
+    line-height: 7vh;
+}
+#content2 img {
+    float: right;
+    padding-top: 3.9%;
+}
+
+#content2 a {
+    color: white;
+    font-size: 2vw;
+    text-align: justify;
+    margin-left: 2.55%;
+    line-height: 7vh;
+}
+
+#map{
+    width: 100%;
+    padding-top: 4%;
+}
+
+#map img{
+    float: left;
+}
+
+#map a {
+    padding-left: 11%;
+    font-size: 2vw;
+    line-height: 7vh;
+    color: white;
+}
+
+#impressum img {
+    float: right;
+    padding-top: 16.1%;
+}
+
+#impressum a {
+    color: white;
+    font-size: 2vw;
+    text-align: justify;
+    margin-left: 13.55%;
+    line-height: 9.5vh;
+}
+
+/* Footer */
+
+footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #82a8d6;
+    color: white;
+    margin-top: 0%;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+footer a{
+    font-size: 1.3vw;
+    padding-left: 35%;
+    color: white;
+}
+
+/* Button Styles */
+#learnMore {
+    background-color:#44c767;
+    -moz-border-radius:0.3em;
+    -webkit-border-radius:0.3em;
+    border-radius:0.3em;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size: 0.9vw;
+    padding:1em 1em;
+    text-decoration:none;
+    white-space: nowrap;
+}
+#learnMore:hover {
+    background-color:#5cbf2a;
+}
+
+/* Mobile */
+@media screen and (max-width: 700px) {
+    body{
+        font-size: 0vw;
+    }
+    footer{
+        margin-top: 2.3vh;
+    }
+
+    #main{
+        margin-top: -25.2vh;
+    }
+
+    #start {
+        background-size: 100% 50%;
+        background-repeat: no-repeat;
+        height: 50vh;
+    }
+
+    #start a{
+        display: none;
+    }
+    #start h1{
+        padding-top: 10vh;
+    }
+
+    #content1 a{
+        line-height: 2.2vh;
+    }
+
+    #content2 a{
+        line-height: 2.2vh;
+    }
+
+    #map a{
+        line-height: 2.2vh;
+    }
+
+    #impressum a{
+        line-height: 2.2vh;
+    }
+
+    #map img{
+        padding-top: 0%;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    footer{
+        margin-top: 2.7vh;
+    }
+
+}

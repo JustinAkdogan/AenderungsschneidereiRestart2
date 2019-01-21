@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="src/css/main.css" />
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+<section id="start">
+    <h1>Carmens Änderungsschneiderei</h1>
+    <a id="learnMore">Erfahre mehr</a>
+</section>
+<section id="main">
+    <div id="content1">
+        <img src="src/img/main_img2.jpg" />
+        <h2>Meine Leistungen</h2>
+        <a>Änderung</a><br>
+            <a>Veredelung</a><br>
+            <a>Maßanfertigung</a><br>
+            <a>Produktion von Musterteilen</a><br>
+            <a>Produktion von Kleinserien</a><br>
+            <a>Kollektionsanfertigung</a><br>
+        </a>
+    </div>
+    <div id="content2">
+        <img src="src/img/main_img1.jpg" />
+        <h2>Meine Öffnungszeiten</h2>
+        <a>Montag: <a style="margin-left: 0%; color: red">Geschlossen</a><br>
+            <a>Dienstag: 09:00 - 17:00</a><br>
+            <a>Mittwoch: 09:00 - 17:00</a><br>
+            <a>Donnerstag: 09:00 - 17:00</a><br>
+            <a>Freitag: 09:00 - 17:00</a><br>
+            <a>Samstag: 09:00 - 17:00</a></a><br>
+            <a>Sonntag:</a> <a style="margin-left: 0%; color: red;">Geschlossen</a>
+    </div>
+    <div id="map">
+        <img src="src/img/map.png" />
+        <h2>Kontakt</h2>
+            <a style="padding-left: 8%; color: orangered; text-decoration: underline">Termine bitte Telefonisch vereinbaren.</a>
+            <a>Stadt: 21481 Lauenburg Elbe</a>
+            <a>Straße: Oberjersdaler Straße 17</a>
+            <a>Telefon: 04153 99999</a>
+    </div>
+    <div id="impressum">
+        <img src="src/img/main_img3.jpg" />
+        <h2>Impressum</h2>
+        <a>Carmens Änderungsschneiderei e. K</a><br>
+        <a>Oberjersdaler Straße 17</a><br>
+        <a>21481 Lauenburg Elbe</a><br>
+        <a>Telefon: 04153 5789032</a><br>
+        <a>Website: carmens-aenderungsschneiderei.de</a><br>
+        <a>Geschäftsführung: Carmen Csabai</a><br>
+        <a></a>
+    </div>
+</section>
+</body>
+<footer>
+  <a>&copy Carmens Änderungsschneiderei</a>
+</footer>
+<script>
+    $("#learnMore").click(function () {
+        $("html, body").animate({ scrollTop: $("#main").offset().top }, 500);
+        return true;
+    });
+</script>
+</html>
